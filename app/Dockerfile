@@ -1,4 +1,4 @@
-FROM google/cloud-sdk:latest
+FROM python:3.8-slim-buster
 
 LABEL maintainer="taiconley@gmail.com"
 
