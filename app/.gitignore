@@ -1,5 +1,4 @@
-/data
-/env
-env
+data/
 env/
-env/*
+credentials.py
+utils.py
