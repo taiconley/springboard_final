@@ -2,3 +2,4 @@ data/
 env/
 credentials.py
 utils.py
+old/

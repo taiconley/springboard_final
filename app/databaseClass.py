@@ -95,6 +95,19 @@ class DB:
         df = pd.read_sql_query(query, con=engine)
         return df
 
+    def BuildTableFromQuery(self, query, tableName):
+        '''builds a new database table from a select query'''
+        query_make_table = '''
+            CREATE TABLE {} AS
+                         {};
+            '''.format(tableName, query)
+        conn = psycopg2.connect(
+            "dbname="+self.dataBaseName+" user="+self.userName+" password="+self.userPass)
+        cur = conn.cursor()
+        cur.execute(query_make_table)
+        conn.commit()
+        conn.close()
+
 
 if __name__ == '__main__':
     pass
