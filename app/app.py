@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify, render_template
 from tensorflow import keras
 import xgboost as xgb
 import autokeras as ak
+import json
 
 
 app = Flask(__name__)
@@ -15,7 +16,7 @@ bst.load_model('xgb_model.json')
 @app.route('/')
 def home():
     #return render_template('index.html')
-    return "hello"
+    return json.dumps({"Status": "OK"})
 
 @app.route('/predict',methods=['POST'])
 def predict():
@@ -65,12 +66,5 @@ def results():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
-
-
-
-    
-# def load_keras(filename):
-#     loaded_model = keras.models.load_model(filename, custom_objects=ak.CUSTOM_OBJECTS)
-#     return loaded_model
+    #app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')

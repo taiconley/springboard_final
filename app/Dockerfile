@@ -18,7 +18,8 @@ COPY . /app
 
 EXPOSE 8888
 
-VOLUME /app
+#VOLUME /app
 
 # Run app.py when the container launches
-CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
+#CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
+CMD ["python", "app.py"]
