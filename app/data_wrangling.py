@@ -62,14 +62,14 @@ def final_table():
     db.DFtoDB(df_merged, "final")
 
 if __name__ == '__main__':
-    #prep for generating and aggregating data to postgres
-    # build_table('sql_files/game_scores.sql', 'game_scores')
-    # build_table('sql_files/shot_performance.sql',
-    #             'player_game_shot_performance')
-    # build_table('sql_files/game_rosters_1.sql', 'game_rosters_1')
-    # build_table('sql_files/game_rosters_2.sql', 'game_rosters_2')
-    # build_table('sql_files/game_rebounds.sql', 'game_rebounds')
-    # build_table('sql_files/output.sql', 'output')
+    prep for generating and aggregating data to postgres
+    build_table('sql_files/game_scores.sql', 'game_scores')
+    build_table('sql_files/shot_performance.sql',
+                'player_game_shot_performance')
+    build_table('sql_files/game_rosters_1.sql', 'game_rosters_1')
+    build_table('sql_files/game_rosters_2.sql', 'game_rosters_2')
+    build_table('sql_files/game_rebounds.sql', 'game_rebounds')
+    build_table('sql_files/output.sql', 'output')
 
     #build final dataset for training
     final_table()

@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 
 bst = xgb.Booster()  # init model
-bst.load_model('xgb_model.json')  
+bst.load_model('models/xgb_model.json')  
 
 
 @app.route('/')
