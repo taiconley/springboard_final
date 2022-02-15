@@ -1,4 +1,4 @@
-This project uses play by play NBA data to predict future games, specifically the spread between 2 sets of players.  
+This project uses play by play NBA data to predict future games, specifically the spread between 2 teams (as defined by a set of players).  
 
 The data can be downloaded directly from Kaggle here (https://www.kaggle.com/schmadam97/nba-playbyplay-data-20182019)
 

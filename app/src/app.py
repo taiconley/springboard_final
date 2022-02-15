@@ -8,7 +8,7 @@ import sys
 import os
 
 #sys.path.append("/Desktop/Projects/springboard_final")
-sys.path.append(os.path.abspath('/Desktop/Projects/springboard_final'))
+#sys.path.append(os.path.abspath('/Desktop/Projects/springboard_final'))
 
 
 
